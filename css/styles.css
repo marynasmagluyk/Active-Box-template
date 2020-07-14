@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+* img {
+    margin: 0 0 -4px 0;
+}
+
+body {
+
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+    color: white;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*=============Container==============*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.header__inner {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0;
+    align-items: center;
+    border-bottom: 1px solid #4f5369;
+}
+
+/*=============NAV================*/
+
+.nav_link {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 13px;
+    color: #cbccd3;
+    opacity: .75;
+    margin-left: 65px;
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    opacity: 1;
+}
+
+.nav_link:first-child {
+    margin-left: 0;
+}
+
+/*===========INTRO================*/
+
+.intro {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    height: 750px;
+    background-size: cover;
+    background: #30344f url("../img/header/intro-bg.jpg") center no-repeat;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.intro__title {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 65px;
+    line-height: 1.1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro__subtitle {
+    font-size: 22px;
+    margin-bottom: 80px;
+    line-height: 1.5;
+}
+
+/*==============BUTTON=========*/
+
+.btn {
+    width: 200px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    border-radius: 2px;
+    padding: 20px 55px;
+    transition: background-color .1s linear;
+}
+
+.btn--red {
+    background-color: #e84545;
+}
+
+.btn--red:hover {
+    background-color: #c92f2f;
+}
+
+/*=========FEATURES===========*/
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px 0;
+}
+
+.features_inner {
+    width: 33.33333%;
+    display: flex;
+    padding: 30px 25px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.features_inner_items_title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 40px;
+    text-align: center;
+    color: #2d3033;
+}
+
+.features_inner_items_text {
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 25px;
+    color: #6c7279;
+}
+
+/*=========DesignBar=======*/
+
+.design_bar {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.design_bar_inner {
+    width: 25%;
+    height: 350px;
+    overflow: hidden;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.design_bar_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.design_bar_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(213, 65, 65, .7);
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.design_bar_inner:hover .design_bar_content {
+    opacity: 1;
+}
+
+.content_title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.content_subtitle {
+    font-weight: bolder;
+}
+
+/*============Team Block===========*/
+
+.team {
+    margin-top: 70px;
+    padding-top: 30px;
+    margin-bottom: 15px;
+}
+
+.team_inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.team_item {
+    width: 25%;
+    color: rgb(108, 114, 121);
+    text-align: left;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.team_photo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.team_name {
+    font-size: 22px;
+    color: rgb(45, 48, 51);
+    margin: 30px 0 15px;
+}
+
+.team_job {
+    font-size: 13px;
+    color: rgb(232, 69, 69);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.team_text {
+    line-height: 1.5;
+    width: 256px;
+    height: 115px;
+
+}
+
+/*==============Team Icons=======*/
+
+.team_icons {
+    display: flex;
+    margin-top: 55px;
+}
+
+.team_inner_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e8ecee;
+    margin-right: 5px;
+    transition: background-color .2s linear;
+}
+
+.team_inner_icons:hover {
+    background-color: #e8ecee;
+}
+
+.team_social_icon {
+    display: block;
+    height: 17px;
+    fill: #c6cacc;
+}
+
+/*================Reviews===========*/
+
+.anchor {
+    padding-top: 85px;
+
+}
+
+.reviews {
+    background-color: #53354a;
+
+}
+
+.reviews_item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews_photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.banner-2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.reviews_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.reviews_text {
+    font-size: 36px;
+    font-style: italic;
+    text-align: left;
+    line-height: 1.167;
+    font-family: "Cardo", sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.reviews_author {
+    text-align: left;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.615;
+}
+
+/*=============Download=================*/
+
+.download {
+    display: flex;
+    align-items: center;
+    height: 340px;
+}
+
+.download_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_title {
+    font-size: 28px;
+    color: rgb(45, 48, 51);
+    line-height: 0.75;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.inner_subtitle {
+    font-size: 13px;
+    color: rgb(45, 48, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.615;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.btn--download {
+    min-width: 280px;
+}
+
+/*=========Footer==========*/
+
+.footer {
+    background-color: #3d4161;
+    padding: 75px 0;
+}
+
+.footer_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_block {
+    width: 33.33333%;
+    padding: 0 15px;
+    text-align: center;
+
+}
+
+.footer_title {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer_adress {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 1.607;
+    text-align: center;
+}
+
+.icons--footer {
+    border: 2px solid white;
+}
+
+.ico--footer {
+    justify-content: center;
+    margin-top: 0;
+
+}
+
+.team_inner_icons:hover .fill--black {
+    fill: black;
+    transition: fill .2s linear;
+}
+
+.footer_text {
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 1.607;
+    text-align: center;
+    opacity: 50%;
+}
+
+.copyright {
+    background-color: #313454;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.copyright div {
+    color: rgb(128, 128, 128);
+    line-height: 1.607;
+    text-align: center;
+}
+
+.copyright span {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
